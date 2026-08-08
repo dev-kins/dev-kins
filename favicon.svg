@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Kian Morgan Hill</title>
+  <desc id="desc">Monogram favicon for dev-kins portfolio</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#123b21" />
+      <stop offset="100%" stop-color="#204f30" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9b956" />
+      <stop offset="100%" stop-color="#f5e4ab" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg)" />
+  <circle cx="256" cy="256" r="170" fill="none" stroke="url(#ring)" stroke-width="18" opacity="0.9" />
+  <path d="M170 344V168h38v68l69-68h47l-78 78 84 98h-48l-63-74-11 11v63z" fill="#f6f4ea" />
+  <path d="M324 344l-17-44h-61l-17 44h-38l56-176h41l56 176zm-46-112l-20 61h41z" fill="#f6f4ea" opacity="0.96" />
+</svg>
