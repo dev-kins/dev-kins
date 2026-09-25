@@ -1,58 +1,34 @@
-# Portfolio Site
+# Kian Morgan Hill / dev-kins
 
-Simple static portfolio site for Kian Morgan.
+Static personal portfolio using HTML, CSS, and JavaScript. No build step or dependencies.
+
+## Preview
+
+Run `python -m http.server 4173 --bind 127.0.0.1` from this directory and visit http://127.0.0.1:4173.
 
 ## Files
 
-- `index.html`
-- `styles.css`
-- `script.js`
+- `index.html`: portfolio copy, projects, screenshot galleries, and contact links.
+- `styles.css`: responsive layout and light/dark themes.
+- `script.js`: progressive enhancements for navigation, theme, and screenshot dialog.
+- `404.html`: missing-page fallback for static hosting.
+- `PORTFOLIO_REVIEW.md`: audit, evidence, changes, verification, and follow-up content needs.
+- `assets/`: existing project images, portrait, icons, and résumé PDF.
 
-## Publish Options
+## Content maintenance
 
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
+Keep project status explicit. A working local feature, a LAN demonstration, a reachable homepage, and a verified deployed workflow are different claims. Add public demo or source links only once confirmed. ClientPilot's AI features are planned, not completed.
 
-## Vercel Quick Publish
+Contact is a direct email link, not a hosted form. The résumé is an existing PDF and needs separate updates when its facts change. Core content, navigation, screenshot links, and gallery disclosures work without JavaScript.
 
-### Fastest option: drag and drop
+## Checks
 
-1. Go to [Vercel](https://vercel.com/).
-2. Sign in with GitHub, Google, or email.
-3. From the dashboard, choose `Add New...` then `Project`.
-4. Use the upload option and upload the contents of this `portfolio` folder.
-5. Wait for the deploy to finish and Vercel will give you a live URL.
+`node --check script.js`
 
-### Better long-term option: connect a repo
+`git diff --check`
 
-1. Create a new GitHub repository for this portfolio.
-2. Upload only the contents of this `portfolio` folder.
-3. In Vercel, choose `Add New...` then `Project`.
-4. Import the GitHub repository.
-5. Keep the default static settings and deploy.
-6. Future updates can be published by pushing changes to the repo.
+Also check mobile navigation, keyboard access to screenshots (Tab, Escape, focus return), themes, all anchors/assets, and layouts at 320, 390, 768, and 1440 pixels. Inspect `404.html` directly; Python's development server uses its own response for unknown paths, while Vercel serves the custom 404 page.
 
-## Vercel Notes
+## Deployment
 
-- This project is static, so no build command is required.
-- `vercel.json` is included for basic deployment and response header configuration.
-- The contact form currently opens a `mailto:` draft, so it depends on the visitor having an email app configured.
-
-## GitHub Pages Quick Publish
-
-1. Create a new GitHub repository for the portfolio.
-2. Upload only the contents of this `portfolio` folder.
-3. In GitHub, open `Settings` > `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select the `main` branch and `/ (root)` folder, then save.
-6. Wait for GitHub Pages to publish the site.
-
-If the repository is named `<username>.github.io`, the site will publish at your main GitHub Pages address.
-
-## Notes
-
-- Update the email link in `index.html`
-- Add more projects later if needed
-- Replace copy or styling to match your personal brand
+Publish the repository root as a static site. Preserve `vercel.json`. Local edits do not change the live site until deployed.
