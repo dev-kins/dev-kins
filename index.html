@@ -1,121 +1,735 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kian Morgan Hill · Laravel &amp; PHP Developer</title>
-  <meta name="description" content="I'm Kian (Kino), an early-career developer in the Philippines. Explore my Laravel school, HR, transparency, and CRM projects, what works, and what I'm learning next.">
-  <meta name="theme-color" content="#21563a">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Kian Morgan Hill · Laravel &amp; PHP Developer">
-  <meta property="og:description" content="School records, HR workflows, public information, and a CRM. A look at my work, the problems I worked through, and where I'm growing next.">
-  <meta property="og:url" content="https://dev-kins.vercel.app/">
-  <meta property="og:image" content="https://dev-kins.vercel.app/assets/profile-photo.jpg">
-  <meta property="og:image:alt" content="Kian Morgan Hill">
-  <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://dev-kins.vercel.app/">
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#home">Skip to content</a>
-<header class="topbar">
-  <div class="wrap header-inner">
-    <a class="brand" href="#home" aria-label="dev-kins home"><span class="brand-mark" aria-hidden="true">DK</span> dev-kins</a>
-    <nav class="topnav" id="primary-navigation" aria-label="Primary navigation">
-      <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
-    <button class="utility" data-theme-toggle type="button" aria-pressed="false">Dark mode</button>
-    <button class="utility menu-toggle" data-menu-toggle type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
-  </div>
-</header>
-<main id="home" class="wrap" tabindex="-1">
-  <section class="hero" aria-labelledby="hero-title">
-    <div>
-      <p class="eyebrow">Kian Morgan Hill · Developer in the Philippines</p>
-      <h1 id="hero-title">I build web apps for the work behind the scenes.</h1>
-      <p class="intro">I'm Kian — you can call me Kino. I work best with Laravel, PHP, HTML, and CSS, building systems for school records, recruitment, and the details teams need to keep track of.</p>
-      <p class="muted">I'm looking for an entry-level web developer or junior full-stack role where I can contribute with that foundation and grow across the stack.</p>
-      <div class="actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">&nbsp;↘</span></a><a class="button" href="./assets/Kian_Morgan_Hill_Resume.pdf">Read my résumé (PDF)</a></div>
-    </div>
-    <figure class="hero-photo"><img src="./assets/profile-photo.jpg" alt="Kian Morgan Hill" width="240" height="300" fetchpriority="high"><figcaption>Kino / dev-kins<br>Learning by building, debugging,<br>and coming back to improve it.</figcaption></figure>
-  </section>
-  <div class="foundation"><span>My strongest foundation</span><strong>Laravel</strong><strong>PHP</strong><strong>HTML</strong><strong>CSS</strong></div>
-  <section id="projects" class="section" tabindex="-1" aria-labelledby="projects-title">
-    <div class="section-intro"><div><p class="eyebrow">01 / Selected work</p><h2 id="projects-title">The work, and what it taught me.</h2></div><p class="muted">Four projects with different workflows to figure out. Here's what I built, what I had to fix, and what still needs work.</p></div>
-    <nav class="project-index" aria-label="Project shortcuts"><a href="#lshs">01 School system</a><a href="#hr">02 HR system</a><a href="#opengov">03 OpenGov</a><a href="#crm">04 ClientPilot</a></nav>
-    <article class="project" id="lshs" aria-labelledby="lshs-title">
-      <div class="project-top"><div><span class="project-number">01 / CAPSTONE PROJECT</span><h3 id="lshs-title">LSHS Online Management Information System</h3><p>A school system for keeping student and professor records, enrollment, grades, and academic requests together. I built the Laravel modules and automated promotion evaluation logic.</p><p class="tagline">Laravel · PHP · Bootstrap · JavaScript · MySQL / PostgreSQL</p><div class="actions"><a class="button" href="https://github.com/dev-kins/lshs-omis">View school system source ↗</a></div></div>
-      <figure class="project-cover"><a class="preview" data-preview href="./assets/LSHS_OMIS/admin-dashboard.png" aria-label="Enlarge school admin dashboard"><img src="./assets/LSHS_OMIS/admin-dashboard.png" alt="LSHS school administration dashboard" loading="lazy" width="1440" height="900"></a><figcaption>Administration dashboard · Select the image to inspect it.</figcaption></figure></div>
-      <div class="project-facts"><div><h4>What I built</h4><p>Student and professor records, enrollment, grades, announcements, report card requests, and promotion evaluation. These modules were developed; the public deployment is not currently verified.</p></div><div><h4>A problem I worked through</h4><p>Getting Laravel beyond my local setup meant working through Docker configuration, PHP extensions, frontend assets, and database settings. It made deployment an explicit part of what I need to test.</p></div></div>
-      <p class="status"><strong>Deployment needs attention.</strong> The latest known Render deployment failed and its database was suspended. Screenshots and source are available; there is no verified live demo.</p>
-      <details id="lshs-gallery"><summary>Explore the school system screens</summary><div class="gallery">
-        <figure><a class="preview" data-preview href="./assets/LSHS_OMIS/homepage.png" aria-label="Enlarge school homepage"><img src="./assets/LSHS_OMIS/homepage.png" alt="LSHS public homepage" loading="lazy"></a><figcaption>Public homepage</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/LSHS_OMIS/teacher-dashboard.png" aria-label="Enlarge professor dashboard"><img src="./assets/LSHS_OMIS/teacher-dashboard.png" alt="LSHS professor dashboard" loading="lazy"></a><figcaption>Professor dashboard</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/LSHS_OMIS/student-dashboard.png" aria-label="Enlarge student dashboard"><img src="./assets/LSHS_OMIS/student-dashboard.png" alt="LSHS student dashboard" loading="lazy"></a><figcaption>Student dashboard</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/LSHS_OMIS/grades.png" aria-label="Enlarge grades screen"><img src="./assets/LSHS_OMIS/grades.png" alt="LSHS grades screen" loading="lazy"></a><figcaption>Grades</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/LSHS_OMIS/grade-consolidation.png" aria-label="Enlarge grade consolidation"><img src="./assets/LSHS_OMIS/grade-consolidation.png" alt="LSHS grade consolidation screen" loading="lazy"></a><figcaption>Grade consolidation</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/LSHS_OMIS/audit-trail.png" aria-label="Enlarge school audit trail"><img src="./assets/LSHS_OMIS/audit-trail.png" alt="LSHS audit trail screen" loading="lazy"></a><figcaption>Audit trail</figcaption></figure>
-      </div></details>
-    </article>
-    <article class="project" id="hr" aria-labelledby="hr-title">
-      <div class="project-top"><div><span class="project-number">02 / INTERNSHIP PROJECT</span><h3 id="hr-title">HR Recruitment &amp; Employee Records</h3><p>I built a Laravel and Bootstrap system to connect applicant tracking with employee records: from interviews and hiring through to departments and employee 201/202 files.</p><p class="tagline">Laravel · PHP · MySQL · Bootstrap</p><p class="meta">Atkins Import &amp; Export Resources Inc. · HR Department</p></div>
-      <figure class="project-cover"><a class="preview" data-preview href="./assets/HR_RWMS/hr-dashboard.png" aria-label="Enlarge HR dashboard"><img src="./assets/HR_RWMS/hr-dashboard.png" alt="HR recruitment and employee records dashboard" loading="lazy" width="1440" height="900"></a><figcaption>Recruitment and employee records dashboard</figcaption></figure></div>
-      <div class="project-facts"><div><h4>What worked in the demonstration</h4><p>The applicant pipeline, conversion from applicant to employee, file uploads, and dashboard widgets worked in a LAN-based demonstration.</p></div><div><h4>A problem I solved</h4><p>Employee numbers followed different formats for manpower, travellers, and temporary relievers. I handled those differences while connecting applicant and employee records.</p></div></div>
-      <p class="status"><strong>Demonstrated on a local network.</strong> A public demo and current production use are unverified. The screens below show the project; they are not a live HR service.</p>
-      <details><summary>Explore the HR system screens</summary><div class="gallery">
-        <figure><a class="preview" data-preview href="./assets/HR_RWMS/hr-applicants.png" aria-label="Enlarge applicant tracking"><img src="./assets/HR_RWMS/hr-applicants.png" alt="HR applicant tracking screen" loading="lazy"></a><figcaption>Applicant pipeline</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/HR_RWMS/hr-workforce.png" aria-label="Enlarge workforce screen"><img src="./assets/HR_RWMS/hr-workforce.png" alt="HR workforce screen" loading="lazy"></a><figcaption>Workforce overview</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/HR_RWMS/hr-employee_profile.png" aria-label="Enlarge employee profile"><img src="./assets/HR_RWMS/hr-employee_profile.png" alt="HR employee profile screen" loading="lazy"></a><figcaption>Employee profile and records</figcaption></figure>
-      </div></details>
-    </article>
-    <article class="project" id="opengov" aria-labelledby="opengov-title">
-      <div class="project-top"><div><span class="project-number">03 / PERSONAL PROJECT</span><h3 id="opengov-title">Naic OpenGov</h3><p>A local government transparency project exploring how projects, budgets, and barangay information can be easier to follow. I built administrative modules alongside a public map.</p><p class="tagline">Laravel · PHP · MySQL · Bootstrap · Blade</p><p class="meta">Personal project; not an official government service.</p></div>
-      <figure class="project-cover"><a class="preview" data-preview href="./assets/Naic-OpenGov/public-portal.png" aria-label="Enlarge OpenGov public portal"><img src="./assets/Naic-OpenGov/public-portal.png" alt="Naic OpenGov public transparency portal" loading="lazy" width="1440" height="900"></a><figcaption>Public portal from the development version</figcaption></figure></div>
-      <div class="project-facts"><div><h4>Implemented during development</h4><p>Dashboards, project and budget management, barangay records, role-based access, an audit trail, and a public map.</p></div><div><h4>A problem I worked through</h4><p>As the project grew, database columns, routes, and Blade views fell out of sync. I debugged those mismatches to reconnect pages with the data they expected.</p></div></div>
-      <p class="status"><strong>Development project; deployment unverified.</strong> Earlier page and route errors still need a fresh check. Procurement, open-data APIs, and predictive analytics remain ideas, not completed features.</p>
-      <details><summary>Explore the OpenGov screens</summary><div class="gallery">
-        <figure><a class="preview" data-preview href="./assets/Naic-OpenGov/dashboard.png" aria-label="Enlarge OpenGov dashboard"><img src="./assets/Naic-OpenGov/dashboard.png" alt="Naic OpenGov administrative dashboard" loading="lazy"></a><figcaption>Administrative dashboard</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/Naic-OpenGov/budget%20page.png" aria-label="Enlarge budget management"><img src="./assets/Naic-OpenGov/budget%20page.png" alt="Naic OpenGov budget management page" loading="lazy"></a><figcaption>Budget management</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/Naic-OpenGov/project%20view.png" aria-label="Enlarge project details"><img src="./assets/Naic-OpenGov/project%20view.png" alt="Naic OpenGov project detail page" loading="lazy"></a><figcaption>Project details</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/Naic-OpenGov/notification.png" aria-label="Enlarge notifications screen"><img src="./assets/Naic-OpenGov/notification.png" alt="Naic OpenGov notifications screen" loading="lazy"></a><figcaption>Notifications screen</figcaption></figure>
-        <figure><a class="preview" data-preview href="./assets/Naic-OpenGov/Login.png" aria-label="Enlarge OpenGov login"><img src="./assets/Naic-OpenGov/Login.png" alt="Naic OpenGov login screen" loading="lazy"></a><figcaption>Login screen</figcaption></figure>
-      </div></details>
-    </article>
-    <article class="project" id="crm" aria-labelledby="crm-title">
-      <div class="project-top"><div><span class="project-number">04 / IN DEVELOPMENT</span><h3 id="crm-title">ClientPilot AI CRM</h3><p>A CRM project with leads, deals, activities, tasks, and admin/sales-rep roles. I'm using Laravel with Inertia and React to build on my backend experience while learning more about frontend application development.</p><p class="tagline">Laravel · PHP · Inertia · React</p></div><div class="crm-note"><p class="eyebrow">Where I'm stretching</p><h4>Connecting the interface to permissions.</h4><p>Working on a React interface is also an exercise in making sure each person can see and change only what their role allows.</p><p class="meta">No public demo or repository is currently confirmed.</p></div></div>
-      <div class="project-facts"><div><h4>Working locally</h4><p>Lead management, roles, deals, and activities were working in local development. Tasks are part of the project scope; their completion is not confirmed.</p></div><div><h4>A problem I solved</h4><p>I fixed authorization issues affecting lead editing and sales-rep access, alongside route and page errors.</p></div></div>
-      <p class="status"><strong>AI integration is planned, not completed.</strong> “AI” is part of the project name, but this is not yet an AI-powered product. Live deployment is unverified.</p>
-    </article>
-  </section>
-  <section id="experience" class="section two-col" tabindex="-1" aria-labelledby="experience-title">
-    <div><p class="eyebrow">02 / Experience</p><h2 id="experience-title">Learning to build around other people's work.</h2></div>
-    <div><h3>Atkins Import &amp; Export Resources Inc.</h3><p class="meta">HR intern · February–May 2026</p><p>Alongside HR responsibilities, I developed the recruitment and employee records system above. The work connected software decisions to the way applicants and employees are actually tracked.</p><p>It gave me practice turning a department's workflow into forms, records, and screens that fit together.</p><a href="#hr">See the HR project ↗</a></div>
-  </section>
-  <section id="skills" class="section" tabindex="-1" aria-labelledby="skills-title">
-    <p class="eyebrow">03 / Skills &amp; direction</p><h2 id="skills-title">A Laravel foundation. Room to grow.</h2>
-    <div class="skill-grid">
-      <div class="skill-card"><h3>Where I'm strongest</h3><p class="skill-names">Laravel · PHP · HTML · CSS</p><p>These are the tools I'm most comfortable using to build application workflows and the pages people use to work through them.</p></div>
-      <div class="skill-card"><h3>Tools I've used</h3><p class="skill-names">JavaScript · MySQL · Bootstrap · Tailwind · Livewire</p><p>Experience supporting interfaces, data, and Laravel applications. My depth varies by tool and project.</p></div>
-      <div class="skill-card"><h3>Developing through projects</h3><p class="skill-names">Inertia · React</p><p>I'm building experience with these in ClientPilot. My React experience comes from project work, and I'm still developing confidence with it.</p></div>
-    </div>
-    <div class="learning"><h3>Next: becoming a more capable full-stack developer.</h3><p>I want to get better at frontend state and accessible interfaces, backend validation and authorization, repeatable deployments, and automated tests for important workflows. For AI integration, my next step is a small feature I can evaluate for usefulness, failure cases, and data handling before calling it finished.</p><p class="meta">Deployment experience so far includes working through Docker, PHP extensions, assets, and database configuration. Reliable deployment and stronger testing are still growth areas.</p></div>
-  </section>
-  <section id="about" class="section two-col" tabindex="-1" aria-labelledby="about-title">
-    <div><p class="eyebrow">04 / A little about me</p><h2 id="about-title">I'm Kino. I keep working through the problem.</h2></div>
-    <div><p>My projects have taken me from school records to recruitment, public information, and customer relationships. What connects them is the work of getting forms, permissions, and data to fit the way a system needs to run.</p><p>When something breaks, I work through the error, test a fix, and come back to improve it after the first working version. I'm still early in my career, and I want a team where I can contribute, ask good questions, and learn from code review.</p><p>Outside development, being a McDonald's Crew Chief taught me to take responsibility, communicate clearly, and stay dependable when work gets busy. That's how I want to show up on a software team, too.</p></div>
-  </section>
-  <section id="contact" class="section two-col" tabindex="-1" aria-labelledby="contact-title">
-    <div><p class="eyebrow">05 / Contact</p><h2 id="contact-title">Have a junior developer role in mind?</h2><p>I'd like to hear about it. I can contribute with Laravel and PHP while continuing to grow in React and broader software engineering practices.</p><p class="muted">Open to opportunities in the Philippines, including onsite and hybrid roles.</p></div>
-    <div><p class="meta">Tell me about the team, the role, and what you're building.</p><a class="email" href="mailto:zeramiehill03@gmail.com">zeramiehill03@gmail.com</a><p class="meta">Opens your email app. You can also copy the address above.</p><div class="actions"><a class="button primary" href="./assets/Kian_Morgan_Hill_Resume.pdf" download>Download résumé (PDF)</a><a class="button" href="https://github.com/dev-kins">GitHub ↗</a><a class="button" href="https://www.linkedin.com/in/kian-morgan-hill-093bba239">LinkedIn ↗</a></div></div>
-  </section>
-</main>
-<footer class="wrap footer"><p>© <span id="year">2026</span> Kian Morgan Hill / dev-kins</p><p>Built with HTML, CSS, and JavaScript. <a href="#home">Back to top ↑</a></p></footer>
-<dialog id="screenshot-dialog" aria-labelledby="screenshot-title"><div class="dialog-top"><h2 id="screenshot-title">Project screenshot</h2><form method="dialog"><button class="utility" autofocus>Close preview</button></form></div><img id="screenshot-image" alt=""></dialog>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kian Morgan Hill · Laravel &amp; PHP Developer</title>
+    <meta
+      name="description"
+      content="I'm Kian (Kino), an early-career developer in the Philippines. Explore my Laravel school, HR, transparency, and CRM projects, what works, and what I'm learning next."
+    />
+    <meta name="theme-color" content="#21563a" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Kian Morgan Hill · Laravel &amp; PHP Developer"
+    />
+    <meta
+      property="og:description"
+      content="School records, HR workflows, public information, and a CRM. A look at my work, the problems I worked through, and where I'm growing next."
+    />
+    <meta property="og:url" content="https://dev-kins.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://dev-kins.vercel.app/assets/profile-photo.jpg"
+    />
+    <meta property="og:image:alt" content="Kian Morgan Hill" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://dev-kins.vercel.app/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header class="topbar">
+      <div class="wrap header-inner">
+        <a class="brand" href="#home" aria-label="dev-kins home"
+          ><span class="brand-mark" aria-hidden="true">DK</span> dev-kins</a
+        >
+        <nav
+          class="topnav"
+          id="primary-navigation"
+          aria-label="Primary navigation"
+        >
+          <a href="#projects">Projects</a><a href="#experience">Experience</a
+          ><a href="#skills">Skills</a><a href="#about">About</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="utility"
+          data-theme-toggle
+          type="button"
+          aria-pressed="false"
+        >
+          Dark mode
+        </button>
+        <button
+          class="utility menu-toggle"
+          data-menu-toggle
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+    <main id="home" class="wrap" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">Kian Morgan Hill · Developer in the Philippines</p>
+          <h1 id="hero-title">
+            I build web apps for the work behind the scenes.
+          </h1>
+          <p class="intro">
+            I'm Kian — you can call me Kino. I work best with Laravel, PHP,
+            HTML, and CSS, building systems for school records, recruitment, and
+            the details teams need to keep track of.
+          </p>
+          <p class="muted">
+            I'm looking for an entry-level web developer or junior full-stack
+            role where I can contribute with that foundation and grow across the
+            stack.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#projects"
+              >Explore my work <span aria-hidden="true">&nbsp;↘</span></a
+            ><a class="button" href="./assets/dev-kins_res.pdf"
+              >Read my résumé (PDF)</a
+            >
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img
+            src="./assets/profile-photo.jpg"
+            alt="Kian Morgan Hill"
+            width="240"
+            height="300"
+            fetchpriority="high"
+          />
+          <figcaption>
+            Kino / dev-kins<br />Learning by building, debugging,<br />and
+            coming back to improve it.
+          </figcaption>
+        </figure>
+      </section>
+      <div class="foundation">
+        <span>My strongest foundation</span><strong>Laravel</strong
+        ><strong>PHP</strong><strong>HTML</strong><strong>CSS</strong>
+      </div>
+      <section
+        id="projects"
+        class="section"
+        tabindex="-1"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2 id="projects-title">The work, and what it taught me.</h2>
+          </div>
+          <p class="muted">
+            Four projects with different workflows to figure out. Here's what I
+            built, what I had to fix, and what still needs work.
+          </p>
+        </div>
+        <nav class="project-index" aria-label="Project shortcuts">
+          <a href="#lshs">01 School system</a><a href="#hr">02 HR system</a
+          ><a href="#opengov">03 OpenGov</a><a href="#crm">04 ClientPilot</a>
+        </nav>
+        <article class="project" id="lshs" aria-labelledby="lshs-title">
+          <div class="project-top">
+            <div>
+              <span class="project-number">01 / CAPSTONE PROJECT</span>
+              <h3 id="lshs-title">LSHS Online Management Information System</h3>
+              <p>
+                A school system for keeping student and professor records,
+                enrollment, grades, and academic requests together. I built the
+                Laravel modules and automated promotion evaluation logic.
+              </p>
+              <p class="tagline">
+                Laravel · PHP · Bootstrap · JavaScript · MySQL / PostgreSQL
+              </p>
+              <div class="actions">
+                <a class="button" href="https://github.com/dev-kins/lshs-omis"
+                  >View school system source ↗</a
+                >
+              </div>
+            </div>
+            <figure class="project-cover">
+              <a
+                class="preview"
+                data-preview
+                href="./assets/LSHS_OMIS/admin-dashboard.png"
+                aria-label="Enlarge school admin dashboard"
+                ><img
+                  src="./assets/LSHS_OMIS/admin-dashboard.png"
+                  alt="LSHS school administration dashboard"
+                  loading="lazy"
+                  width="1440"
+                  height="900"
+              /></a>
+              <figcaption>
+                Administration dashboard · Select the image to inspect it.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-facts">
+            <div>
+              <h4>What I built</h4>
+              <p>
+                Student and professor records, enrollment, grades,
+                announcements, report card requests, and promotion evaluation.
+                These modules were developed; the public deployment is not
+                currently verified.
+              </p>
+            </div>
+            <div>
+              <h4>A problem I worked through</h4>
+              <p>
+                Getting Laravel beyond my local setup meant working through
+                Docker configuration, PHP extensions, frontend assets, and
+                database settings. It made deployment an explicit part of what I
+                need to test.
+              </p>
+            </div>
+          </div>
+          <p class="status">
+            <strong>Deployment needs attention.</strong> The latest known Render
+            deployment failed and its database was suspended. Screenshots and
+            source are available; there is no verified live demo.
+          </p>
+          <details id="lshs-gallery">
+            <summary>Explore the school system screens</summary>
+            <div class="gallery">
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/LSHS_OMIS/homepage.png"
+                  aria-label="Enlarge school homepage"
+                  ><img
+                    src="./assets/LSHS_OMIS/homepage.png"
+                    alt="LSHS public homepage"
+                    loading="lazy"
+                /></a>
+                <figcaption>Public homepage</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/LSHS_OMIS/teacher-dashboard.png"
+                  aria-label="Enlarge professor dashboard"
+                  ><img
+                    src="./assets/LSHS_OMIS/teacher-dashboard.png"
+                    alt="LSHS professor dashboard"
+                    loading="lazy"
+                /></a>
+                <figcaption>Professor dashboard</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/LSHS_OMIS/student-dashboard.png"
+                  aria-label="Enlarge student dashboard"
+                  ><img
+                    src="./assets/LSHS_OMIS/student-dashboard.png"
+                    alt="LSHS student dashboard"
+                    loading="lazy"
+                /></a>
+                <figcaption>Student dashboard</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/LSHS_OMIS/grades.png"
+                  aria-label="Enlarge grades screen"
+                  ><img
+                    src="./assets/LSHS_OMIS/grades.png"
+                    alt="LSHS grades screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Grades</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/LSHS_OMIS/grade-consolidation.png"
+                  aria-label="Enlarge grade consolidation"
+                  ><img
+                    src="./assets/LSHS_OMIS/grade-consolidation.png"
+                    alt="LSHS grade consolidation screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Grade consolidation</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/LSHS_OMIS/audit-trail.png"
+                  aria-label="Enlarge school audit trail"
+                  ><img
+                    src="./assets/LSHS_OMIS/audit-trail.png"
+                    alt="LSHS audit trail screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Audit trail</figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+        <article class="project" id="hr" aria-labelledby="hr-title">
+          <div class="project-top">
+            <div>
+              <span class="project-number">02 / INTERNSHIP PROJECT</span>
+              <h3 id="hr-title">HR Recruitment &amp; Employee Records</h3>
+              <p>
+                I built a Laravel and Bootstrap system to connect applicant
+                tracking with employee records: from interviews and hiring
+                through to departments and employee 201/202 files.
+              </p>
+              <p class="tagline">Laravel · PHP · MySQL · Bootstrap</p>
+              <p class="meta">
+                Atkins Import &amp; Export Resources Inc. · HR Department
+              </p>
+            </div>
+            <figure class="project-cover">
+              <a
+                class="preview"
+                data-preview
+                href="./assets/HR_RWMS/hr-dashboard.png"
+                aria-label="Enlarge HR dashboard"
+                ><img
+                  src="./assets/HR_RWMS/hr-dashboard.png"
+                  alt="HR recruitment and employee records dashboard"
+                  loading="lazy"
+                  width="1440"
+                  height="900"
+              /></a>
+              <figcaption>
+                Recruitment and employee records dashboard
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-facts">
+            <div>
+              <h4>What worked in the demonstration</h4>
+              <p>
+                The applicant pipeline, conversion from applicant to employee,
+                file uploads, and dashboard widgets worked in a LAN-based
+                demonstration.
+              </p>
+            </div>
+            <div>
+              <h4>A problem I solved</h4>
+              <p>
+                Employee numbers followed different formats for manpower,
+                travellers, and temporary relievers. I handled those differences
+                while connecting applicant and employee records.
+              </p>
+            </div>
+          </div>
+          <p class="status">
+            <strong>Demonstrated on a local network.</strong> A public demo and
+            current production use are unverified. The screens below show the
+            project; they are not a live HR service.
+          </p>
+          <details>
+            <summary>Explore the HR system screens</summary>
+            <div class="gallery">
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/HR_RWMS/hr-applicants.png"
+                  aria-label="Enlarge applicant tracking"
+                  ><img
+                    src="./assets/HR_RWMS/hr-applicants.png"
+                    alt="HR applicant tracking screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Applicant pipeline</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/HR_RWMS/hr-workforce.png"
+                  aria-label="Enlarge workforce screen"
+                  ><img
+                    src="./assets/HR_RWMS/hr-workforce.png"
+                    alt="HR workforce screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Workforce overview</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/HR_RWMS/hr-employee_profile.png"
+                  aria-label="Enlarge employee profile"
+                  ><img
+                    src="./assets/HR_RWMS/hr-employee_profile.png"
+                    alt="HR employee profile screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Employee profile and records</figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+        <article class="project" id="opengov" aria-labelledby="opengov-title">
+          <div class="project-top">
+            <div>
+              <span class="project-number">03 / PERSONAL PROJECT</span>
+              <h3 id="opengov-title">Naic OpenGov</h3>
+              <p>
+                A local government transparency project exploring how projects,
+                budgets, and barangay information can be easier to follow. I
+                built administrative modules alongside a public map.
+              </p>
+              <p class="tagline">Laravel · PHP · MySQL · Bootstrap · Blade</p>
+              <p class="meta">
+                Personal project; not an official government service.
+              </p>
+            </div>
+            <figure class="project-cover">
+              <a
+                class="preview"
+                data-preview
+                href="./assets/Naic-OpenGov/public-portal.png"
+                aria-label="Enlarge OpenGov public portal"
+                ><img
+                  src="./assets/Naic-OpenGov/public-portal.png"
+                  alt="Naic OpenGov public transparency portal"
+                  loading="lazy"
+                  width="1440"
+                  height="900"
+              /></a>
+              <figcaption>
+                Public portal from the development version
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-facts">
+            <div>
+              <h4>Implemented during development</h4>
+              <p>
+                Dashboards, project and budget management, barangay records,
+                role-based access, an audit trail, and a public map.
+              </p>
+            </div>
+            <div>
+              <h4>A problem I worked through</h4>
+              <p>
+                As the project grew, database columns, routes, and Blade views
+                fell out of sync. I debugged those mismatches to reconnect pages
+                with the data they expected.
+              </p>
+            </div>
+          </div>
+          <p class="status">
+            <strong>Development project; deployment unverified.</strong> Earlier
+            page and route errors still need a fresh check. Procurement,
+            open-data APIs, and predictive analytics remain ideas, not completed
+            features.
+          </p>
+          <details>
+            <summary>Explore the OpenGov screens</summary>
+            <div class="gallery">
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/Naic-OpenGov/dashboard.png"
+                  aria-label="Enlarge OpenGov dashboard"
+                  ><img
+                    src="./assets/Naic-OpenGov/dashboard.png"
+                    alt="Naic OpenGov administrative dashboard"
+                    loading="lazy"
+                /></a>
+                <figcaption>Administrative dashboard</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/Naic-OpenGov/budget%20page.png"
+                  aria-label="Enlarge budget management"
+                  ><img
+                    src="./assets/Naic-OpenGov/budget%20page.png"
+                    alt="Naic OpenGov budget management page"
+                    loading="lazy"
+                /></a>
+                <figcaption>Budget management</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/Naic-OpenGov/project%20view.png"
+                  aria-label="Enlarge project details"
+                  ><img
+                    src="./assets/Naic-OpenGov/project%20view.png"
+                    alt="Naic OpenGov project detail page"
+                    loading="lazy"
+                /></a>
+                <figcaption>Project details</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/Naic-OpenGov/notification.png"
+                  aria-label="Enlarge notifications screen"
+                  ><img
+                    src="./assets/Naic-OpenGov/notification.png"
+                    alt="Naic OpenGov notifications screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Notifications screen</figcaption>
+              </figure>
+              <figure>
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/Naic-OpenGov/Login.png"
+                  aria-label="Enlarge OpenGov login"
+                  ><img
+                    src="./assets/Naic-OpenGov/Login.png"
+                    alt="Naic OpenGov login screen"
+                    loading="lazy"
+                /></a>
+                <figcaption>Login screen</figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+        <article class="project" id="crm" aria-labelledby="crm-title">
+          <div class="project-top">
+            <div>
+              <span class="project-number">04 / IN DEVELOPMENT</span>
+              <h3 id="crm-title">ClientPilot AI CRM</h3>
+              <p>
+                A CRM project with leads, deals, activities, tasks, and
+                admin/sales-rep roles. I'm using Laravel with Inertia and React
+                to build on my backend experience while learning more about
+                frontend application development.
+              </p>
+              <p class="tagline">Laravel · PHP · Inertia · React</p>
+            </div>
+            <div class="crm-note">
+              <p class="eyebrow">Where I'm stretching</p>
+              <h4>Connecting the interface to permissions.</h4>
+              <p>
+                Working on a React interface is also an exercise in making sure
+                each person can see and change only what their role allows.
+              </p>
+              <p class="meta">
+                No public demo or repository is currently confirmed.
+              </p>
+            </div>
+          </div>
+          <div class="project-facts">
+            <div>
+              <h4>Working locally</h4>
+              <p>
+                Lead management, roles, deals, and activities were working in
+                local development. Tasks are part of the project scope; their
+                completion is not confirmed.
+              </p>
+            </div>
+            <div>
+              <h4>A problem I solved</h4>
+              <p>
+                I fixed authorization issues affecting lead editing and
+                sales-rep access, alongside route and page errors.
+              </p>
+            </div>
+          </div>
+          <p class="status">
+            <strong>AI integration is planned, not completed.</strong> “AI” is
+            part of the project name, but this is not yet an AI-powered product.
+            Live deployment is unverified.
+          </p>
+        </article>
+      </section>
+      <section
+        id="experience"
+        class="section two-col"
+        tabindex="-1"
+        aria-labelledby="experience-title"
+      >
+        <div>
+          <p class="eyebrow">02 / Experience</p>
+          <h2 id="experience-title">
+            Learning to build around other people's work.
+          </h2>
+        </div>
+        <div>
+          <h3>Atkins Import &amp; Export Resources Inc.</h3>
+          <p class="meta">HR intern · February–May 2026</p>
+          <p>
+            Alongside HR responsibilities, I developed the recruitment and
+            employee records system above. The work connected software decisions
+            to the way applicants and employees are actually tracked.
+          </p>
+          <p>
+            It gave me practice turning a department's workflow into forms,
+            records, and screens that fit together.
+          </p>
+          <a href="#hr">See the HR project ↗</a>
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="section"
+        tabindex="-1"
+        aria-labelledby="skills-title"
+      >
+        <p class="eyebrow">03 / Skills &amp; direction</p>
+        <h2 id="skills-title">A Laravel foundation. Room to grow.</h2>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Where I'm strongest</h3>
+            <p class="skill-names">Laravel · PHP · HTML · CSS</p>
+            <p>
+              These are the tools I'm most comfortable using to build
+              application workflows and the pages people use to work through
+              them.
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Tools I've used</h3>
+            <p class="skill-names">
+              JavaScript · MySQL · Bootstrap · Tailwind · Livewire
+            </p>
+            <p>
+              Experience supporting interfaces, data, and Laravel applications.
+              My depth varies by tool and project.
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Developing through projects</h3>
+            <p class="skill-names">Inertia · React</p>
+            <p>
+              I'm building experience with these in ClientPilot. My React
+              experience comes from project work, and I'm still developing
+              confidence with it.
+            </p>
+          </div>
+        </div>
+        <div class="learning">
+          <h3>Next: becoming a more capable full-stack developer.</h3>
+          <p>
+            I want to get better at frontend state and accessible interfaces,
+            backend validation and authorization, repeatable deployments, and
+            automated tests for important workflows. For AI integration, my next
+            step is a small feature I can evaluate for usefulness, failure
+            cases, and data handling before calling it finished.
+          </p>
+          <p class="meta">
+            Deployment experience so far includes working through Docker, PHP
+            extensions, assets, and database configuration. Reliable deployment
+            and stronger testing are still growth areas.
+          </p>
+        </div>
+      </section>
+      <section
+        id="about"
+        class="section two-col"
+        tabindex="-1"
+        aria-labelledby="about-title"
+      >
+        <div>
+          <p class="eyebrow">04 / A little about me</p>
+          <h2 id="about-title">
+            I'm Kino. I keep working through the problem.
+          </h2>
+        </div>
+        <div>
+          <p>
+            My projects have taken me from school records to recruitment, public
+            information, and customer relationships. What connects them is the
+            work of getting forms, permissions, and data to fit the way a system
+            needs to run.
+          </p>
+          <p>
+            When something breaks, I work through the error, test a fix, and
+            come back to improve it after the first working version. I'm still
+            early in my career, and I want a team where I can contribute, ask
+            good questions, and learn from code review.
+          </p>
+          <p>
+            Outside development, being a McDonald's Crew Chief taught me to take
+            responsibility, communicate clearly, and stay dependable when work
+            gets busy. That's how I want to show up on a software team, too.
+          </p>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="section two-col"
+        tabindex="-1"
+        aria-labelledby="contact-title"
+      >
+        <div>
+          <p class="eyebrow">05 / Contact</p>
+          <h2 id="contact-title">Have a junior developer role in mind?</h2>
+          <p>
+            I'd like to hear about it. I can contribute with Laravel and PHP
+            while continuing to grow in React and broader software engineering
+            practices.
+          </p>
+          <p class="muted">
+            Open to opportunities in the Philippines, including onsite and
+            hybrid roles.
+          </p>
+        </div>
+        <div>
+          <p class="meta">
+            Tell me about the team, the role, and what you're building.
+          </p>
+          <a class="email" href="mailto:zeramiehill03@gmail.com"
+            >zeramiehill03@gmail.com</a
+          >
+          <p class="meta">
+            Opens your email app. You can also copy the address above.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="./assets/Kian_Morgan_Hill_Resume.pdf"
+              download
+              >Download résumé (PDF)</a
+            ><a class="button" href="https://github.com/dev-kins">GitHub ↗</a
+            ><a
+              class="button"
+              href="https://www.linkedin.com/in/kian-morgan-hill-093bba239"
+              >LinkedIn ↗</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <p>© <span id="year">2026</span> Kian Morgan Hill / dev-kins</p>
+      <p>
+        Built with HTML, CSS, and JavaScript. <a href="#home">Back to top ↑</a>
+      </p>
+    </footer>
+    <dialog id="screenshot-dialog" aria-labelledby="screenshot-title">
+      <div class="dialog-top">
+        <h2 id="screenshot-title">Project screenshot</h2>
+        <form method="dialog">
+          <button class="utility" autofocus>Close preview</button>
+        </form>
+      </div>
+      <img id="screenshot-image" alt="" />
+    </dialog>
+  </body>
 </html>
