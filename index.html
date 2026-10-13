@@ -127,13 +127,14 @@
             <h2 id="projects-title">The work, and what it taught me.</h2>
           </div>
           <p class="muted">
-            Four projects with different workflows to figure out. Here's what I
+            Five projects with different workflows to figure out. Here's what I
             built, what I had to fix, and what still needs work.
           </p>
         </div>
         <nav class="project-index" aria-label="Project shortcuts">
           <a href="#lshs">01 School system</a><a href="#hr">02 HR system</a
-          ><a href="#opengov">03 OpenGov</a><a href="#crm">04 ClientPilot</a>
+          ><a href="#opengov">03 OpenGov</a><a href="#crm">04 ClientPilot</a
+          ><a href="#shipproof">05 ShipProof</a>
         </nav>
         <article class="project" id="lshs" aria-labelledby="lshs-title">
           <div class="project-top">
@@ -151,6 +152,13 @@
               <div class="actions">
                 <a class="button" href="https://github.com/dev-kins/lshs-omis"
                   >View school system source ↗</a
+                >
+                <a
+                  class="button primary"
+                  href="https://management-information-system-aep1.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo ↗</a
                 >
               </div>
             </div>
@@ -178,8 +186,9 @@
               <p>
                 Student and professor records, enrollment, grades,
                 announcements, report card requests, and promotion evaluation.
-                These modules were developed; the public deployment is not
-                currently verified.
+                These modules were developed. The public landing page is
+                reachable; sign-in, school workflows, and database health have
+                not been tested.
               </p>
             </div>
             <div>
@@ -193,9 +202,9 @@
             </div>
           </div>
           <p class="status">
-            <strong>Deployment needs attention.</strong> The latest known Render
-            deployment failed and its database was suspended. Screenshots and
-            source are available; there is no verified live demo.
+            <strong>Deployment status.</strong> The public landing page is
+            reachable; sign-in, school workflows, and database health have not
+            been tested.
           </p>
           <details id="lshs-gallery">
             <summary>Explore the school system screens</summary>
@@ -556,6 +565,88 @@
             part of the project name, but this is not yet an AI-powered product.
             Live deployment is unverified.
           </p>
+        </article>
+        <article
+          class="project"
+          id="shipproof"
+          aria-labelledby="shipproof-title"
+        >
+          <div class="project-top">
+            <div>
+              <span class="project-number">05 / COMPLETED MVP</span>
+              <h3 id="shipproof-title">ShipProof</h3>
+              <p>
+                A Laravel and React tool that turns GitHub repository data into
+                structured project case studies, helping developers explain
+                their work, technical contributions, and lessons learned.
+              </p>
+              <p class="tagline">
+                Laravel · PHP · React · Inertia.js · Tailwind CSS · GitHub REST
+                API · SQLite · Docker
+              </p>
+              <div class="actions">
+                <a
+                  class="button primary"
+                  href="https://ship-proof.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo ↗</a
+                ><a
+                  class="button"
+                  href="https://github.com/dev-kins/shipproof"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Source code ↗</a
+                >
+              </div>
+            </div>
+            <div>
+              <figure class="project-cover">
+                <a
+                  class="preview"
+                  data-preview
+                  href="./assets/SHIP_PROOF/showcase.png"
+                  aria-label="Enlarge ShipProof developer project case-study generator preview"
+                  ><img
+                    src="./assets/SHIP_PROOF/showcase.png"
+                    alt="ShipProof developer project case-study generator preview"
+                    loading="lazy"
+                    width="1920"
+                    height="1034"
+                /></a>
+              </figure>
+              <div class="crm-note">
+                <p class="eyebrow">Project status</p>
+                <h4>Completed MVP · Demo available</h4>
+                <p>
+                  The MVP is available to explore. Its purpose is to help
+                  developers organize project evidence and tell a clearer story
+                  about what they built.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project-facts">
+            <div>
+              <h4>What I built</h4>
+              <p>
+                A Laravel and React tool that retrieves public GitHub repository
+                information and helps developers turn repository facts into
+                structured project case studies. Users can describe their
+                contributions, preview their story, and export it as Markdown.
+              </p>
+            </div>
+            <div>
+              <h4>A problem I worked through</h4>
+              <p>
+                GitHub repositories show code and activity, but they don't fully
+                explain the problem a developer solved, the decisions they made,
+                or what they learned. ShipProof combines repository evidence
+                with a developer's own explanation while keeping sourced facts
+                separate from personal claims.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
       <section
