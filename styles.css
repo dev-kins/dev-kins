@@ -644,3 +644,10 @@ details{border-top-color:var(--line)}summary{color:var(--accent)}
   .hero-photo{justify-content:center;margin:10px auto 0 0}
   .hero-photo figcaption{text-align:left}
 }
+
+
+/* Compact portfolio delivery metric */
+.foundation .shipped-stat{display:inline-flex;align-items:baseline;gap:9px;margin-right:8px;padding:5px 12px;border:1px solid var(--line);border-radius:7px;background:var(--surface)}
+.foundation .shipped-stat strong{padding:0;border:0;background:transparent;color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:1.15rem;line-height:1}
+.foundation .shipped-stat span{width:auto;color:var(--muted);font-size:.78rem;font-weight:600;letter-spacing:0;text-transform:none}
+@media(max-width:700px){.foundation .shipped-stat{margin-right:0}}
