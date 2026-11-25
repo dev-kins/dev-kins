@@ -634,3 +634,13 @@ details{border-top-color:var(--line)}summary{color:var(--accent)}
 @media(max-width:700px){.hero{padding:48px 0 40px}.hero h1{font-size:clamp(2.7rem,12vw,4.2rem)}.hero-photo{margin:10px 0 0 6px}.hero-photo img{width:108px}.hero-photo figcaption{font-size:.65rem}.section{padding:58px 0}.tech-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.tech-item{min-height:100px}.engineering-grid{grid-template-columns:1fr}.engineering-card{min-height:0}.flow-diagram{justify-content:flex-start}}
 @media(max-width:380px){.tech-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.tech-item{animation:none}.button,.project,.project-index a,.tech-item,.tech-item img{transition:none}}
+
+
+/* Center the introduction on narrow screens while keeping desktop editorial alignment */
+@media(max-width:700px){
+  .hero-copy{text-align:center}
+  .hero-copy .intro,.hero-copy>.muted{margin-left:auto;margin-right:auto}
+  .hero-signals,.hero .actions{justify-content:center}
+  .hero-photo{justify-content:center;margin:10px auto 0 0}
+  .hero-photo figcaption{text-align:left}
+}
